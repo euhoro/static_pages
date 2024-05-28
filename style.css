@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    direction: rtl; /* Ensure right-to-left text direction */
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #f0a500;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#hero {
+    padding: 100px 20px;
+    background: url('guitar-background.jpg') no-repeat center center/cover;
+    animation: fadeIn 3s;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: #f0a500;
+    color: #121212;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #ffffff;
+}
+
+#about, #lessons, #contact {
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.teacher-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.video-links a {
+    display: block;
+    color: #f0a500;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.video-links a:hover {
+    color: #ffffff;
+}
+
+.social-links .icon {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #121212;
+    text-decoration: none;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label, form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #f0a500;
+    color: #121212;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 10px 0;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    #hero h1 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    .video-links a {
+        font-size: 14px;
+    }
+}

@@ -144,3 +144,49 @@ footer {
         font-size: 14px;
     }
 }
+
+header.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(31, 31, 31, 0.8); /* Semi-transparent background */
+    padding: 10px 0;
+    text-align: center;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+#hero {
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    background-color: #000; /* Black background for borders */
+}
+
+#background {
+    background: url('img/background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    #background {
+        background-size: contain; /* Contain the image within the viewport with borders on desktop */
+    }
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero {
+        background-color: #121212; /* Remove black borders on mobile */
+    }
+
+    #background {
+        background-size: cover;
+    }
+}

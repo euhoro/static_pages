@@ -30,7 +30,7 @@ main {
 
 #hero {
     padding: 100px 20px;
-    background: url('guitar-background.jpg') no-repeat center center/cover;
+    background: url('img/background.jpg') no-repeat center center/cover;
     animation: fadeIn 3s;
 }
 
@@ -163,17 +163,11 @@ header.overlay {
 
 #background {
     background: url('img/background.jpg') no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-}
-
-@media (min-width: 1024px) {
-    #background {
-        background-size: contain; /* Contain the image within the viewport with borders on desktop */
-    }
 }
 
 @media (max-width: 600px) {
@@ -188,5 +182,6 @@ header.overlay {
 
     #background {
         background-size: cover;
+        background-position: center;
     }
 }
